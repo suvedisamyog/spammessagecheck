@@ -1,9 +1,14 @@
+import os
 import streamlit as st
+
 import pickle
 import string
 from nltk.corpus import stopwords
 import nltk
 nltk.download('stopwords')
+script_directory = os.path.dirname(os.path.realpath(__file__))
+vectorizer_path = os.path.join(script_directory, 'vectorizer.pkl')
+model_path = os.path.join(script_directory, 'model.pkl')
 
 from nltk.stem.porter import PorterStemmer
 

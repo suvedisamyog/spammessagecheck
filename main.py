@@ -33,7 +33,7 @@ def transform_text(text):
             y.append(i)
 
     text = y[:]
-    y.clear()
+    
 
     for i in text:
         y.append(ps.stem(i))
